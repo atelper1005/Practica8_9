@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS instituto;
+CREATE DATABASE IF NOT EXISTS instituto CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+USE instituto;
+CREATE TABLE IF NOT EXISTS daw1 (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    alumno VARCHAR(35) NOT NULL,
+    intervenciones TINYINT DEFAULT 0,
+    ultima_intervencion DATE
+);
